@@ -1,0 +1,40 @@
+{
+  "name": "wiput-me",
+  "version": "0.0.1",
+  "repository": "https://github.com/wiput1999/wiput-me",
+  "author": "Wiput Pootong <contact@wiput.me>",
+  "private": true,
+  "scripts": {
+    "build": "next build",
+    "deploy": "netlify deploy --dir=./out --prod",
+    "dev": "next",
+    "export": "next export",
+    "start": "next start",
+    "format": "yarn test:lint --fix",
+    "test:types": "tsc",
+    "test:lint": "tslint 'src/**/*.{ts,tsx}'"
+  },
+  "dependencies": {
+    "@chakra-ui/core": "^0.7.0",
+    "@emotion/core": "^10.0.28",
+    "@emotion/styled": "^10.0.27",
+    "@next/bundle-analyzer": "^9.3.2",
+    "babel-plugin-emotion": "^10.0.29",
+    "emotion-theming": "^10.0.27",
+    "netlify-cli": "^2.40.0",
+    "next": "9.3.2",
+    "next-compose-plugins": "^2.2.0",
+    "next-offline": "^5.0.0",
+    "preact": "^10.3.4",
+    "react": "16.13.1",
+    "react-dom": "16.13.1"
+  },
+  "devDependencies": {
+    "prettier": "^2.0.2",
+    "tslint": "^6.1.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-eslint-rules": "^5.4.0",
+    "tslint-plugin-prettier": "^2.3.0",
+    "tslint-react": "^4.2.0"
+  }
+}
