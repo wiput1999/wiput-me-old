@@ -13,7 +13,7 @@ class NextApp extends App {
     return (
       <React.StrictMode>
         <Head>
-          <title>wiput.me</title>
+          <title>Wiput Pootong - Full-stack Developer</title>
           <meta name='theme-color' content='#2d3748' />
           <meta name='description' content='I am full-stack developer...' />
           {/* <link rel='manifest' href='/manifest.webmanifest' /> */}

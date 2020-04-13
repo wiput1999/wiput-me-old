@@ -1,7 +1,7 @@
 import React from 'react'
 
-import { NextPage } from 'next'
 import { Flex, Heading, Stack } from '@chakra-ui/core'
+import { NextPage } from 'next'
 
 const IndexPage: NextPage = () => {
   return (
