@@ -16,7 +16,7 @@ const IndexPage: NextPage = () => {
           WIPUT POOTONG
         </Heading>
         <Heading as='h4' size='md' textAlign='center'>
-          Full-stack developer
+          Full-Stack Developer
         </Heading>
       </Stack>
     </Flex>
