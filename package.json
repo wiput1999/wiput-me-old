@@ -15,12 +15,7 @@
     "test:lint": "tslint 'src/**/*.{ts,tsx}'"
   },
   "dependencies": {
-    "@chakra-ui/core": "^0.7.0",
-    "@emotion/core": "^10.0.28",
-    "@emotion/styled": "^10.0.27",
     "@next/bundle-analyzer": "^9.3.2",
-    "babel-plugin-emotion": "^10.0.29",
-    "emotion-theming": "^10.0.27",
     "netlify-cli": "^2.40.0",
     "next": "9.3.2",
     "next-compose-plugins": "^2.2.0",
@@ -30,7 +25,12 @@
     "react-dom": "16.13.1"
   },
   "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^2.1.2",
+    "@types/react": "^16.9.34",
+    "autoprefixer": "^9.7.6",
+    "postcss-preset-env": "^6.7.0",
     "prettier": "^2.0.2",
+    "tailwindcss": "^1.2.0",
     "tslint": "^6.1.0",
     "tslint-config-prettier": "^1.18.0",
     "tslint-eslint-rules": "^5.4.0",

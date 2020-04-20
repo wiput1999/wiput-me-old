@@ -1,25 +1,30 @@
 import React from 'react'
 
-import { Flex, Heading, Stack } from '@chakra-ui/core'
 import { NextPage } from 'next'
+import Link from 'next/link'
 
 const IndexPage: NextPage = () => {
   return (
-    <Flex
-      overflow='hidden'
-      height='100%'
-      justify='center'
-      align='center'
-      wrap={['wrap', 'wrap', 'initial']}>
-      <Stack spacing={1}>
-        <Heading as='h1' size='2xl'>
-          WIPUT POOTONG
-        </Heading>
-        <Heading as='h4' size='md' textAlign='center'>
-          Full-Stack Developer
-        </Heading>
-      </Stack>
-    </Flex>
+    <div className='w-full min-h-screen grid grid-cols-1 justify-center items-center'>
+      <div className='w-full text-center'>
+        <p className='text-4xl'>WIPUT POOTONG</p>
+        <p className='text-xl'>Back-end Developer</p>
+        <div className='flex flex-row justify-between mt-8 mx-auto max-w-lg underline'>
+          <a href='https://blog.wiput.me' target='_blank'>
+            Blog
+          </a>
+          <a href='https://cv.wiput.me' target='_blank'>
+            Curriculum Vitae
+          </a>
+          <a href='https://github.com/wiput1999' target='_blank'>
+            GitHub
+          </a>
+          <a href='https://www.linkedin.com/in/wiputpootong/' target='_blank'>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+    </div>
   )
 }
 

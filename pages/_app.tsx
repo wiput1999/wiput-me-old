@@ -3,8 +3,7 @@ import React from 'react'
 import App from 'next/app'
 import Head from 'next/head'
 
-import { CSSReset, ThemeProvider } from '@chakra-ui/core'
-import { css, Global } from '@emotion/core'
+import '../styles/main.css'
 
 class NextApp extends App {
   public render() {
@@ -20,19 +19,7 @@ class NextApp extends App {
           <link rel='shortcut icon' href='/favicon.png' />
           <link rel='apple-touch-icon' href='/favicon.png' />
         </Head>
-        <ThemeProvider>
-          <CSSReset />
-          <Global
-            styles={css`
-              html,
-              body,
-              #__next {
-                height: 100%;
-              }
-            `}
-          />
-          <Component {...pageProps} />
-        </ThemeProvider>
+        <Component {...pageProps} />
       </React.StrictMode>
     )
   }

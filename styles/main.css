@@ -1,0 +1,14 @@
+/* purgecss start ignore */
+@tailwind base;
+@tailwind components;
+
+body {
+  @apply min-h-screen;
+}
+
+#__next {
+  @apply min-h-screen;
+}
+/* purgecss end ignore */
+
+@tailwind utilities;
