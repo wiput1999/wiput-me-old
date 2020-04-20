@@ -9,7 +9,7 @@ const IndexPage: NextPage = () => {
       <div className='w-full text-center'>
         <p className='text-4xl'>WIPUT POOTONG</p>
         <p className='text-xl'>Back-end Developer</p>
-        <div className='flex flex-row justify-between mt-8 mx-auto max-w-lg underline'>
+        <div className='flex flex-row justify-between mt-4 md:mt-8 px-4 mx-auto max-w-lg underline'>
           <a href='https://blog.wiput.me' target='_blank'>
             Blog
           </a>
