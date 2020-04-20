@@ -12,9 +12,9 @@ class NextApp extends App {
     return (
       <React.StrictMode>
         <Head>
-          <title>Wiput Pootong - Full-stack Developer</title>
+          <title>Wiput Pootong - Back-end Developer</title>
           <meta name='theme-color' content='#2d3748' />
-          <meta name='description' content='I am Full-Stack Developer...' />
+          <meta name='description' content='I am Back-end Developer...' />
           {/* <link rel='manifest' href='/manifest.webmanifest' /> */}
           <link rel='shortcut icon' href='/favicon.png' />
           <link rel='apple-touch-icon' href='/favicon.png' />
