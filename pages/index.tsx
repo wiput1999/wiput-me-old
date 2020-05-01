@@ -10,11 +10,11 @@ const IndexPage: NextPage = () => {
         <p className='text-4xl'>WIPUT POOTONG</p>
         <p className='text-xl'>Back-end Developer</p>
         <div className='flex flex-row justify-between mt-4 md:mt-8 px-4 mx-auto max-w-lg underline'>
+          <a href='https://cv.wiput.me' target='_blank'>
+            About me
+          </a>
           <a href='https://blog.wiput.me' target='_blank'>
             Blog
-          </a>
-          <a href='https://cv.wiput.me' target='_blank'>
-            Curriculum Vitae
           </a>
           <a href='https://github.com/wiput1999' target='_blank'>
             GitHub
