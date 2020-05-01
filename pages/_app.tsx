@@ -10,7 +10,7 @@ class NextApp extends App {
     const { Component, pageProps } = this.props
 
     return (
-      <React.StrictMode>
+      <>
         <Head>
           <title>Wiput Pootong - Back-end Developer</title>
           <meta name='theme-color' content='#2d3748' />
@@ -20,7 +20,7 @@ class NextApp extends App {
           <link rel='apple-touch-icon' href='/favicon.png' />
         </Head>
         <Component {...pageProps} />
-      </React.StrictMode>
+      </>
     )
   }
 }
