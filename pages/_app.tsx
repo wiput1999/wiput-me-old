@@ -6,7 +6,7 @@ import Head from 'next/head'
 import '../styles/main.css'
 
 class NextApp extends App {
-  public render() {
+  public render(): JSX.Element {
     const { Component, pageProps } = this.props
 
     return (
