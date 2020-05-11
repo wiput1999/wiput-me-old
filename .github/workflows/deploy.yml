@@ -7,7 +7,7 @@ on:
 
 jobs:
   test:
-    runs-on: macOS-latest
+    runs-on: macos-latest
     strategy:
       matrix:
         node-version: [12.x]
@@ -39,7 +39,7 @@ jobs:
           yarn test:lint
   deploy:
     needs: test
-    runs-on: macOS-latest
+    runs-on: macos-latest
     strategy:
       matrix:
         node-version: [12.x]
