@@ -19,5 +19,6 @@ module.exports = {
     'postcss-preset-env',
     purgeCss,
     ['autoprefixer', { grid: true }],
+    'cssnano',
   ],
 }
