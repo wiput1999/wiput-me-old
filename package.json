@@ -12,7 +12,7 @@
     "start": "next start",
     "format": "yarn test:lint --fix",
     "test:types": "tsc",
-    "test:lint": "eslint '*/**/*.{js,ts,tsx}' --debug"
+    "test:lint": "eslint '*/**/*.{js,ts,tsx}'"
   },
   "dependencies": {
     "@next/bundle-analyzer": "^9.3.2",
