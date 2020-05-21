@@ -1,6 +1,6 @@
 const withPlugins = require('next-compose-plugins')
 
-const withOffline = require('next-offline')
+// const withOffline = require('next-offline')
 const withBundleAnalyzer = require('@next/bundle-analyzer')
 
 const withPreact = (nextConfig = {}) => {
@@ -36,7 +36,7 @@ module.exports = withPlugins(
   [
     [withPreact],
     [withBundleAnalyzer({ enabled: process.env.ANALYZE === 'true' })],
-    [withOffline],
+    // [withOffline],
   ],
   {}
 )
