@@ -1,8 +1,8 @@
 export interface IInternship {
-  company: string
-  role: string
-  from: string
-  to: string
+  company: string;
+  role: string;
+  from: string;
+  to: string;
 }
 
 export const INTERNSHIPS: IInternship[] = [
@@ -12,13 +12,13 @@ export const INTERNSHIPS: IInternship[] = [
     from: 'June 2019',
     to: 'July 2019',
   },
-]
+];
 
 export interface IEducation {
-  degree: string
-  institite: string
-  from: string
-  to: string
+  degree: string;
+  institite: string;
+  from: string;
+  to: string;
 }
 
 export const EDUCATIONS: IEducation[] = [
@@ -34,12 +34,12 @@ export const EDUCATIONS: IEducation[] = [
     from: '2011',
     to: '2017',
   },
-]
+];
 
 export interface IAward {
-  name: string
-  prize: string
-  description?: string
+  name: string;
+  prize: string;
+  description?: string;
 }
 
 export const AWARDS: IAward[] = [
@@ -80,14 +80,14 @@ export const AWARDS: IAward[] = [
       'Web Development with PHP and Javascript - IT Latkrabang Open House 2016',
     prize: 'Winner',
   },
-]
+];
 
 export interface IActivity {
-  name: string
-  link?: string
-  role: string
-  from: string
-  to: string
+  name: string;
+  link?: string;
+  role: string;
+  from: string;
+  to: string;
 }
 
 export const ACTIVITIES: IActivity[] = [
@@ -98,16 +98,16 @@ export const ACTIVITIES: IActivity[] = [
     from: 'June',
     to: 'December 2019',
   },
-]
+];
 
 export interface IFeaturedProject {
-  name: string
-  year: string
-  description: string
+  name: string;
+  year: string;
+  description: string;
   links: {
-    title: string
-    link: string
-  }[]
+    title: string;
+    link: string;
+  }[];
 }
 
 export const FEATUREDPROJECTS: IFeaturedProject[] = [
@@ -159,13 +159,13 @@ export const FEATUREDPROJECTS: IFeaturedProject[] = [
       { title: 'Website', link: 'https://aqi-it.netlify.app/' },
     ],
   },
-]
+];
 
 export interface ISchoolProject {
-  name: string
-  year: string
-  description: string
-  link: string
+  name: string;
+  year: string;
+  description: string;
+  link: string;
 }
 
 export const SCHOOLPROJECTS: ISchoolProject[] = [
@@ -226,7 +226,7 @@ export const SCHOOLPROJECTS: ISchoolProject[] = [
     description: 'Terrorism Analysis, part of PSIT class',
     link: 'https://github.com/wiput1999/TerrorismAnalysis',
   },
-]
+];
 
 export const SKILLS: string[] = [
   'React',
@@ -246,4 +246,4 @@ export const SKILLS: string[] = [
   'Django',
   'Java',
   'Spring',
-]
+];
