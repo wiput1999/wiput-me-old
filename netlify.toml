@@ -1,2 +1,7 @@
 [[plugins]]
 package = "./tools/plugins/netlify/stop-build"
+
+[build.environment]
+  NETLIFY_USE_YARN = true
+  NODE_VERSION = "14"
+  YARN_VERSION = "1.22.5"
