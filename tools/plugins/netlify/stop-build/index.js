@@ -1,7 +1,7 @@
 module.exports = {
   onPreBuild: ({ utils }) => {
     const currentProject = process.env.PROJECT_NAME;
-    const lastDeployedCommit = 'HEAD~1';
+    const lastDeployedCommit = 'HEAD~3';
     const latestCommit = 'HEAD';
     const projectHasChanged = projectChanged(
       currentProject,
@@ -22,7 +22,6 @@ function projectChanged(currentProject, fromHash, toHash) {
   const output = execSync(getAffected).toString();
   //get the list of changed projects from the output
   const changedProjects = JSON.parse(output).projects;
-  console.log(changedProjects, fromHash)
   if (changedProjects.find(project => project === currentProject)) {
     return true;
   } else {
