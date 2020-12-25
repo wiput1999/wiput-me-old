@@ -19,13 +19,6 @@
             "production": {}
           }
         },
-        "deploy": {
-          "builder": "@netlify-builder/deploy:deploy",
-          "options": {
-            "outputPath": "dist/apps/homepage/exported",
-            "siteId": "ed49237d-1c95-40e1-9f8a-3858e896091c"
-          }
-        },
         "serve": {
           "executor": "@nrwl/next:server",
           "options": {
@@ -63,6 +56,63 @@
           ],
           "options": {
             "jestConfig": "apps/homepage/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "cv": {
+      "root": "apps/cv",
+      "sourceRoot": "apps/cv",
+      "projectType": "application",
+      "targets": {
+        "build": {
+          "executor": "@nrwl/next:build",
+          "outputs": [
+            "{options.outputPath}"
+          ],
+          "options": {
+            "root": "apps/cv",
+            "outputPath": "dist/apps/cv"
+          },
+          "configurations": {
+            "production": {}
+          }
+        },
+        "serve": {
+          "executor": "@nrwl/next:server",
+          "options": {
+            "buildTarget": "cv:build",
+            "dev": true
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "cv:build:production",
+              "dev": false
+            }
+          }
+        },
+        "export": {
+          "executor": "@nrwl/next:export",
+          "options": {
+            "buildTarget": "cv:build:production"
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/cv/**/*.{ts,tsx,js,jsx}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/cv"
+          ],
+          "options": {
+            "jestConfig": "apps/cv/jest.config.js",
             "passWithNoTests": true
           }
         }
