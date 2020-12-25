@@ -19,6 +19,13 @@
             "production": {}
           }
         },
+        "deploy": {
+          "builder": "@netlify-builder/deploy:deploy",
+          "options": {
+            "outputPath": "dist/apps/homepage/exported",
+            "siteId": "ed49237d-1c95-40e1-9f8a-3858e896091c"
+          }
+        },
         "serve": {
           "executor": "@nrwl/next:server",
           "options": {
@@ -36,6 +43,9 @@
           "executor": "@nrwl/next:export",
           "options": {
             "buildTarget": "homepage:build:production"
+          },
+          "configurations": {
+            "production": {}
           }
         },
         "lint": {

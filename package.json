@@ -18,6 +18,8 @@
     "affected:lint": "nx affected:lint",
     "affected:dep-graph": "nx affected:dep-graph",
     "affected": "nx affected",
+    "affected:deploy": "nx affected --target=deploy",
+    "affected:export": "nx affected --target=export",
     "format": "nx format:write",
     "format:write": "nx format:write",
     "format:check": "nx format:check",
@@ -28,6 +30,7 @@
   },
   "private": true,
   "dependencies": {
+    "@netlify-builder/deploy": "^3.1.1",
     "core-js": "^3.6.5",
     "document-register-element": "1.13.1",
     "next": "10.0.1",
