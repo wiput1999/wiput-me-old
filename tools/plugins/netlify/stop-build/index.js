@@ -1,14 +1,15 @@
 module.exports = {
   onPreBuild: ({ utils }) => {
     const currentProject = process.env.PROJECT_NAME;
-    const lastDeployedCommit = 'HEAD~3';
+    const lastDeployedCommit = process.env.CACHED_COMMIT_REF;
+    const currentCommit = process.env.COMMIT_REF;
     const latestCommit = 'HEAD';
     const projectHasChanged = projectChanged(
       currentProject,
       lastDeployedCommit,
       latestCommit
     );
-    if (!projectHasChanged) {
+    if (!projectHasChanged && currentCommit !== lastDeployedCommit) {
       utils.build.cancelBuild(
         `Build was cancelled because ${currentProject} was not affected by the latest changes`
       );
