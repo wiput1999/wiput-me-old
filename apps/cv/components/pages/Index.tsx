@@ -50,7 +50,7 @@ export default function Index(): React.ReactElement {
       ))}
       <Topic>School Projects</Topic>
       {SCHOOLPROJECTS.map(data => (
-        <SchoolProject key={data.name} {...data} />
+        <SchoolProject key={`schoolproject-${data.name}`} {...data} />
       ))}
       <Topic>Skills</Topic>
       <div className='grid grid-cols-4'>
