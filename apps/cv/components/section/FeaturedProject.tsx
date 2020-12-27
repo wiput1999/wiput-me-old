@@ -19,12 +19,12 @@ export const FeaturedProject = ({
       </Paragraph>
       <div className='flex'>
         {links.map(link => (
-          <>
-            <Link key={link.link} link={link.link}>
+          <React.Fragment key={link.link}>
+            <Link  link={link.link}>
               {link.title}
             </Link>
             <div className='px-1' />
-          </>
+          </React.Fragment>
         ))}
       </div>
     </Card>
