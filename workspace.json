@@ -8,15 +8,15 @@
       "targets": {
         "build": {
           "executor": "@nrwl/next:build",
-          "outputs": [
-            "{options.outputPath}"
-          ],
+          "outputs": ["{options.outputPath}"],
           "options": {
             "root": "apps/homepage",
             "outputPath": "dist/apps/homepage"
           },
           "configurations": {
-            "production": {}
+            "production": {
+              "outputPath": "."
+            }
           }
         },
         "serve": {
@@ -44,16 +44,12 @@
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "apps/homepage/**/*.{ts,tsx,js,jsx}"
-            ]
+            "lintFilePatterns": ["apps/homepage/**/*.{ts,tsx,js,jsx}"]
           }
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/homepage"
-          ],
+          "outputs": ["coverage/apps/homepage"],
           "options": {
             "jestConfig": "apps/homepage/jest.config.js",
             "passWithNoTests": true
@@ -68,9 +64,7 @@
       "targets": {
         "build": {
           "executor": "@nrwl/next:build",
-          "outputs": [
-            "{options.outputPath}"
-          ],
+          "outputs": ["{options.outputPath}"],
           "options": {
             "root": "apps/cv",
             "outputPath": "dist/apps/cv"
@@ -101,16 +95,12 @@
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "apps/cv/**/*.{ts,tsx,js,jsx}"
-            ]
+            "lintFilePatterns": ["apps/cv/**/*.{ts,tsx,js,jsx}"]
           }
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/cv"
-          ],
+          "outputs": ["coverage/apps/cv"],
           "options": {
             "jestConfig": "apps/cv/jest.config.js",
             "passWithNoTests": true
