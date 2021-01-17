@@ -11,7 +11,7 @@ import Document, {
 
 class NextDocument extends Document {
   public static async getInitialProps(
-    ctx: DocumentContext
+    ctx: DocumentContext,
   ): Promise<DocumentInitialProps> {
     const initialProps = await Document.getInitialProps(ctx)
 
