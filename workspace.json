@@ -1,6 +1,57 @@
 {
   "version": 2,
   "projects": {
+    "cv": {
+      "root": "apps/cv",
+      "sourceRoot": "apps/cv",
+      "projectType": "application",
+      "targets": {
+        "build": {
+          "executor": "@nrwl/next:build",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "root": "apps/cv",
+            "outputPath": "dist/apps/cv"
+          },
+          "configurations": {
+            "production": {}
+          }
+        },
+        "serve": {
+          "executor": "@nrwl/next:server",
+          "options": {
+            "buildTarget": "cv:build",
+            "dev": true
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "cv:build:production",
+              "dev": false
+            }
+          }
+        },
+        "export": {
+          "executor": "@nrwl/next:export",
+          "options": {
+            "buildTarget": "cv:build:production"
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["apps/cv/**/*.{ts,tsx,js,jsx}"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/apps/cv"],
+          "options": {
+            "jestConfig": "apps/cv/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
     "homepage": {
       "root": "apps/homepage",
       "sourceRoot": "apps/homepage",
@@ -8,9 +59,7 @@
       "targets": {
         "build": {
           "executor": "@nrwl/next:build",
-          "outputs": [
-            "{options.outputPath}"
-          ],
+          "outputs": ["{options.outputPath}"],
           "options": {
             "root": "apps/homepage",
             "outputPath": "dist/apps/homepage"
@@ -44,96 +93,18 @@
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "apps/homepage/**/*.{ts,tsx,js,jsx}"
-            ]
+            "lintFilePatterns": ["apps/homepage/**/*.{ts,tsx,js,jsx}"]
           }
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/homepage"
-          ],
+          "outputs": ["coverage/apps/homepage"],
           "options": {
             "jestConfig": "apps/homepage/jest.config.js",
             "passWithNoTests": true
           }
         }
       }
-    },
-    "cv": {
-      "root": "apps/cv",
-      "sourceRoot": "apps/cv",
-      "projectType": "application",
-      "targets": {
-        "build": {
-          "executor": "@nrwl/next:build",
-          "outputs": [
-            "{options.outputPath}"
-          ],
-          "options": {
-            "root": "apps/cv",
-            "outputPath": "dist/apps/cv"
-          },
-          "configurations": {
-            "production": {}
-          }
-        },
-        "serve": {
-          "executor": "@nrwl/next:server",
-          "options": {
-            "buildTarget": "cv:build",
-            "dev": true
-          },
-          "configurations": {
-            "production": {
-              "buildTarget": "cv:build:production",
-              "dev": false
-            }
-          }
-        },
-        "export": {
-          "executor": "@nrwl/next:export",
-          "options": {
-            "buildTarget": "cv:build:production"
-          }
-        },
-        "lint": {
-          "executor": "@nrwl/linter:eslint",
-          "options": {
-            "lintFilePatterns": [
-              "apps/cv/**/*.{ts,tsx,js,jsx}"
-            ]
-          }
-        },
-        "test": {
-          "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/cv"
-          ],
-          "options": {
-            "jestConfig": "apps/cv/jest.config.js",
-            "passWithNoTests": true
-          }
-        }
-      }
     }
-  },
-  "cli": {
-    "defaultCollection": "@nrwl/next"
-  },
-  "generators": {
-    "@nrwl/react": {
-      "application": {
-        "babel": true
-      }
-    },
-    "@nrwl/next": {
-      "application": {
-        "style": "css",
-        "linter": "eslint"
-      }
-    }
-  },
-  "defaultProject": "homepage"
+  }
 }
