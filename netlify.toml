@@ -2,7 +2,7 @@
 package = "./tools/plugins/netlify/stop-build"
 
 [[plugins]]
-package = "/netlify-plugin-cache"
+package = "netlify-plugin-cache"
 
   [plugins.inputs]
   paths = [".pnpm"]
