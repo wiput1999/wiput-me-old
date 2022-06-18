@@ -1,6 +1,9 @@
 [[plugins]]
   package = "/.netlify/netlify-plugin-pnpm"
 
+[[plugins]]
+  package = "/.netlify/netlify-plugin-stop-build"
+
 [build]
   command = "pnpx nx export $PROJECT_NAME"
 
