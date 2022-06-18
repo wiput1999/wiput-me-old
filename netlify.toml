@@ -1,5 +1,5 @@
-[[plugins]]
-package = "./tools/plugins/netlify/stop-build"
+# [[plugins]]
+# package = "./tools/plugins/netlify/stop-build"
 
 [build]
   command = "npx pnpm install --store-dir=.pnpm --frozen-lockfile && npx pnpm export $PROJECT_NAME"
