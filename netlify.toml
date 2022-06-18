@@ -2,7 +2,7 @@
   package = "/.netlify/netlify-plugin-pnpm"
 
 [build]
-  command = "pnpm export $PROJECT_NAME"
+  command = "pnpx nx export $PROJECT_NAME"
 
 [build.environment]
   NETLIFY_USE_YARN="false"
