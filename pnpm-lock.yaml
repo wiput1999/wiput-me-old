@@ -42,7 +42,6 @@ importers:
       eslint-plugin-react: 7.30.0
       eslint-plugin-react-hooks: 4.6.0
       jest: 28.1.1
-      netlify-plugin-cache: ^1.0.3
       next: 12.1.6
       next-compose-plugins: ^2.2.1
       postcss: ^8.4.14
@@ -105,7 +104,6 @@ importers:
       eslint-plugin-react: 7.30.0_eslint@8.18.0
       eslint-plugin-react-hooks: 4.6.0_eslint@8.18.0
       jest: 28.1.1_jbmz3vlfopghb5mdasddsdxfzq
-      netlify-plugin-cache: 1.0.3
       postcss: 8.4.14
       prettier: 2.7.1
       tailwindcss: 3.1.3_ts-node@10.8.1
@@ -8489,10 +8487,6 @@ packages:
 
   /neo-async/2.6.2:
     resolution: {integrity: sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==}
-    dev: true
-
-  /netlify-plugin-cache/1.0.3:
-    resolution: {integrity: sha512-CTOwNWrTOP59T6y6unxQNnp1WX702v2R/faR5peSH94ebrYfyY4zT5IsRcIiHKq57jXeyCrhy0GLuTN8ktzuQg==}
     dev: true
 
   /next-compose-plugins/2.2.1:
