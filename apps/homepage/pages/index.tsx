@@ -1,6 +1,7 @@
 import React from 'react'
 
 import { NextPage } from 'next'
+import Image from 'next/image'
 
 const IndexPage: NextPage = () => {
   return (
@@ -12,7 +13,7 @@ const IndexPage: NextPage = () => {
           target='_blank'
           rel='noopener noreferrer'
         >
-          <img
+          <Image
             alt='วงแหวนเว็บ'
             width='32'
             height='32'
