@@ -17,6 +17,7 @@ const IndexPage: NextPage = () => {
             alt='วงแหวนเว็บ'
             width='32'
             height='32'
+            loader={({ src }) => src}
             src='https://webring.wonderful.software/webring.black.svg'
           />
         </a>

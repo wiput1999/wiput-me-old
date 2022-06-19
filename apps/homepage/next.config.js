@@ -6,6 +6,7 @@
 const nextConfig = {
   images: {
     domains: ['webring.wonderful.software'],
+    loader: 'custom',
   },
 }
 
