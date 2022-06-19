@@ -23,7 +23,7 @@ const IndexPage: NextPage = () => {
       <div className='w-full min-h-screen grid grid-cols-1 justify-center items-center'>
         <div className='w-full text-center'>
           <p className='text-4xl'>WIPUT POOTONG</p>
-          <p className='text-xl'>Back-end Developer</p>
+          <p className='text-xl'>Software Engineer</p>
           <div className='flex flex-row justify-between mt-4 md:mt-8 px-4 mx-auto max-w-lg underline'>
             <a
               href='https://cv.wiput.me'
