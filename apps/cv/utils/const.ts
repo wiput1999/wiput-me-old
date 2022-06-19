@@ -1,8 +1,30 @@
+export interface IWork {
+  company: string
+  role: string
+  from: string
+  to: string
+}
+
+export const WORKS: IWork[] = [
+  {
+    company: 'Brikl (Thailand)',
+    role: 'Software Engineer (Backend)',
+    from: 'June 2021',
+    to: 'Now',
+  },
+  {
+    company: 'Brikl (Thailand)',
+    role: 'Junior Software Engineer (Backend)',
+    from: 'March 2021',
+    to: 'June 2021',
+  },
+]
+
 export interface IInternship {
-  company: string;
-  role: string;
-  from: string;
-  to: string;
+  company: string
+  role: string
+  from: string
+  to: string
 }
 
 export const INTERNSHIPS: IInternship[] = [
@@ -12,13 +34,13 @@ export const INTERNSHIPS: IInternship[] = [
     from: 'June 2019',
     to: 'July 2019',
   },
-];
+]
 
 export interface IEducation {
-  degree: string;
-  institite: string;
-  from: string;
-  to: string;
+  degree: string
+  institite: string
+  from: string
+  to: string
 }
 
 export const EDUCATIONS: IEducation[] = [
@@ -26,7 +48,7 @@ export const EDUCATIONS: IEducation[] = [
     degree: 'B.Sc. Information Technology',
     institite: `King Mongkut's Institute of Technology Ladkrabang`,
     from: '2017',
-    to: 'Now',
+    to: '2021',
   },
   {
     degree: 'High School',
@@ -34,12 +56,12 @@ export const EDUCATIONS: IEducation[] = [
     from: '2011',
     to: '2017',
   },
-];
+]
 
 export interface IAward {
-  name: string;
-  prize: string;
-  description?: string;
+  name: string
+  prize: string
+  description?: string
 }
 
 export const AWARDS: IAward[] = [
@@ -56,8 +78,7 @@ export const AWARDS: IAward[] = [
       'Classnalytic - classroom analytic platform tracking students attendance, emotion and behavior then generate into a report',
   },
   {
-    name:
-      'Actions on Google Hackathon Thailand 2018 - Google Developer Group Thailand',
+    name: 'Actions on Google Hackathon Thailand 2018 - Google Developer Group Thailand',
     prize: '1st Runner-up',
     description:
       'Siri FastPass - Google Assistant app helps your guests visiting your residence more comfortable',
@@ -67,8 +88,7 @@ export const AWARDS: IAward[] = [
     prize: 'First Prize in the most Angry Emoji Vote Category',
   },
   {
-    name:
-      'ICT Challenge 2016 - SIT King Mongkut’s University of Technology Thonburi',
+    name: 'ICT Challenge 2016 - SIT King Mongkut’s University of Technology Thonburi',
     prize: 'Winner',
   },
   {
@@ -76,18 +96,17 @@ export const AWARDS: IAward[] = [
     prize: 'Winner',
   },
   {
-    name:
-      'Web Development with PHP and Javascript - IT Latkrabang Open House 2016',
+    name: 'Web Development with PHP and Javascript - IT Latkrabang Open House 2016',
     prize: 'Winner',
   },
-];
+]
 
 export interface IActivity {
-  name: string;
-  link?: string;
-  role: string;
-  from: string;
-  to: string;
+  name: string
+  link?: string
+  role: string
+  from: string
+  to: string
 }
 
 export const ACTIVITIES: IActivity[] = [
@@ -98,16 +117,16 @@ export const ACTIVITIES: IActivity[] = [
     from: 'June',
     to: 'December 2019',
   },
-];
+]
 
 export interface IFeaturedProject {
-  name: string;
-  year: string;
-  description: string;
+  name: string
+  year: string
+  description: string
   links: {
-    title: string;
-    link: string;
-  }[];
+    title: string
+    link: string
+  }[]
 }
 
 export const FEATUREDPROJECTS: IFeaturedProject[] = [
@@ -159,13 +178,13 @@ export const FEATUREDPROJECTS: IFeaturedProject[] = [
       { title: 'Website', link: 'https://aqi-it.netlify.app/' },
     ],
   },
-];
+]
 
 export interface ISchoolProject {
-  name: string;
-  year: string;
-  description: string;
-  link: string;
+  name: string
+  year: string
+  description: string
+  link: string
 }
 
 export const SCHOOLPROJECTS: ISchoolProject[] = [
@@ -226,7 +245,7 @@ export const SCHOOLPROJECTS: ISchoolProject[] = [
     description: 'Terrorism Analysis, part of PSIT class',
     link: 'https://github.com/wiput1999/TerrorismAnalysis',
   },
-];
+]
 
 export const SKILLS: string[] = [
   'React',
@@ -246,4 +265,4 @@ export const SKILLS: string[] = [
   'Django',
   'Java',
   'Spring',
-];
+]
