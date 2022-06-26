@@ -14,7 +14,7 @@ class NextApp extends App {
         <Head>
           <title>Wiput Pootong - Back-end Developer</title>
           <meta name='theme-color' content='#2d3748' />
-          <meta name='description' content='I am Back-end Developer...' />
+          <meta name='description' content='I am Software Engineer...' />
           {/* <link rel='manifest' href='/manifest.webmanifest' /> */}
           <link rel='shortcut icon' href='/favicon.png' />
           <link rel='apple-touch-icon' href='/favicon.png' />
