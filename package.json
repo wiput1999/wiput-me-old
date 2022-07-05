@@ -35,7 +35,7 @@
     "cssnano": "^5.1.12",
     "cssnano-preset-advanced": "^5.3.8",
     "document-register-element": "1.14.10",
-    "next": "12.2.0",
+    "next": "12.1.6",
     "next-compose-plugins": "^2.2.1",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-nesting": "^10.1.10",
