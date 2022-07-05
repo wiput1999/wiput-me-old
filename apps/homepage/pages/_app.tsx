@@ -12,7 +12,7 @@ class NextApp extends App {
     return (
       <>
         <Head>
-          <title>Wiput Pootong - Back-end Developer</title>
+          <title>Wiput Pootong - Software Engineer</title>
           <meta name='theme-color' content='#2d3748' />
           <meta name='description' content='I am Software Engineer...' />
           {/* <link rel='manifest' href='/manifest.webmanifest' /> */}
