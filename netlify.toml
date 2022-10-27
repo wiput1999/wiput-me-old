@@ -1,7 +1,4 @@
 [[plugins]]
-  package = "/.netlify/netlify-plugin-pnpm"
-
-[[plugins]]
   package = "/.netlify/netlify-plugin-stop-build"
 
 [build]
